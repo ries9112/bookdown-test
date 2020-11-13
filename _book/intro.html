@@ -348,96 +348,96 @@ Figure 2.1: Here is a nice figure!
 <span id="cb4-3"><a href="intro.html#cb4-3" aria-hidden="true"></a>cryptodata &lt;-<span class="st"> </span><span class="kw">pin_get</span>(<span class="dt">name =</span> <span class="st">&quot;hitBTC_orderbook&quot;</span>)</span></code></pre></div>
 <p>Show data</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="intro.html#cb5-1" aria-hidden="true"></a>cryptodata</span></code></pre></div>
-<pre><code>## [90m# A tibble: 244,108 x 27[39m
+<pre><code>## # A tibble: 244,443 x 27
 ##    pair  symbol quote_currency ask_1_price ask_1_quantity ask_2_price
-##    [3m[90m&lt;chr&gt;[39m[23m [3m[90m&lt;chr&gt;[39m[23m  [3m[90m&lt;chr&gt;[39m[23m                [3m[90m&lt;dbl&gt;[39m[23m          [3m[90m&lt;dbl&gt;[39m[23m       [3m[90m&lt;dbl&gt;[39m[23m
-## [90m 1[39m BTCU… BTC    USD             [4m1[24m[4m6[24m290.             0.058[4m9[24m  [4m1[24m[4m6[24m290.    
-## [90m 2[39m ETHU… ETH    USD               462.             0.4       463.    
-## [90m 3[39m EOSU… EOS    USD                 2.46         600           2.46  
-## [90m 4[39m LTCU… LTC    USD                60.7            3.75       60.7   
-## [90m 5[39m BSVU… BSV    USD               158.             0.6       158.    
-## [90m 6[39m ADAU… ADA    USD                 0.105        775           0.105 
-## [90m 7[39m ZECU… ZEC    USD                63.0            2.59       63.1   
-## [90m 8[39m TRXU… TRX    USD                 0.024[4m9[24m     [4m6[24m[4m5[24m497           0.024[4m9[24m
-## [90m 9[39m HTUSD HT     USD                 3.64         105.          3.65  
-## [90m10[39m XMRU… XMR    USD               112.             0.023     112.    
-## [90m# … with 244,098 more rows, and 21 more variables: ask_2_quantity [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   ask_3_price [3m[90m&lt;dbl&gt;[90m[23m, ask_3_quantity [3m[90m&lt;dbl&gt;[90m[23m, ask_4_price [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   ask_4_quantity [3m[90m&lt;dbl&gt;[90m[23m, ask_5_price [3m[90m&lt;dbl&gt;[90m[23m, ask_5_quantity [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_1_price [3m[90m&lt;dbl&gt;[90m[23m, bid_1_quantity [3m[90m&lt;dbl&gt;[90m[23m, bid_2_price [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_2_quantity [3m[90m&lt;dbl&gt;[90m[23m, bid_3_price [3m[90m&lt;dbl&gt;[90m[23m, bid_3_quantity [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_4_price [3m[90m&lt;dbl&gt;[90m[23m, bid_4_quantity [3m[90m&lt;dbl&gt;[90m[23m, bid_5_price [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_5_quantity [3m[90m&lt;dbl&gt;[90m[23m, date_time_utc [3m[90m&lt;dttm&gt;[90m[23m, date [3m[90m&lt;date&gt;[90m[23m, pkDummy [3m[90m&lt;chr&gt;[90m[23m,[39m
-## [90m#   pkey [3m[90m&lt;chr&gt;[90m[23m[39m</code></pre>
+##    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;                &lt;dbl&gt;          &lt;dbl&gt;       &lt;dbl&gt;
+##  1 BTCU… BTC    USD             16290.             0.0589  16290.    
+##  2 ETHU… ETH    USD               462.             0.4       463.    
+##  3 EOSU… EOS    USD                 2.46         600           2.46  
+##  4 LTCU… LTC    USD                60.7            3.75       60.7   
+##  5 BSVU… BSV    USD               158.             0.6       158.    
+##  6 ADAU… ADA    USD                 0.105        775           0.105 
+##  7 ZECU… ZEC    USD                63.0            2.59       63.1   
+##  8 TRXU… TRX    USD                 0.0249     65497           0.0249
+##  9 HTUSD HT     USD                 3.64         105.          3.65  
+## 10 XMRU… XMR    USD               112.             0.023     112.    
+## # … with 244,433 more rows, and 21 more variables: ask_2_quantity &lt;dbl&gt;,
+## #   ask_3_price &lt;dbl&gt;, ask_3_quantity &lt;dbl&gt;, ask_4_price &lt;dbl&gt;,
+## #   ask_4_quantity &lt;dbl&gt;, ask_5_price &lt;dbl&gt;, ask_5_quantity &lt;dbl&gt;,
+## #   bid_1_price &lt;dbl&gt;, bid_1_quantity &lt;dbl&gt;, bid_2_price &lt;dbl&gt;,
+## #   bid_2_quantity &lt;dbl&gt;, bid_3_price &lt;dbl&gt;, bid_3_quantity &lt;dbl&gt;,
+## #   bid_4_price &lt;dbl&gt;, bid_4_quantity &lt;dbl&gt;, bid_5_price &lt;dbl&gt;,
+## #   bid_5_quantity &lt;dbl&gt;, date_time_utc &lt;dttm&gt;, date &lt;date&gt;, pkDummy &lt;chr&gt;,
+## #   pkey &lt;chr&gt;</code></pre>
 <p>Show nested data</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="intro.html#cb7-1" aria-hidden="true"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<pre><code>## ── [1mAttaching packages[22m ─────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
-<pre><code>## [32m✔[39m [34mggplot2[39m 3.3.2     [32m✔[39m [34mpurrr  [39m 0.3.4
-## [32m✔[39m [34mtibble [39m 3.0.4     [32m✔[39m [34mdplyr  [39m 1.0.2
-## [32m✔[39m [34mtidyr  [39m 1.1.2     [32m✔[39m [34mstringr[39m 1.4.0
-## [32m✔[39m [34mreadr  [39m 1.4.0     [32m✔[39m [34mforcats[39m 0.5.0</code></pre>
-<pre><code>## ── [1mConflicts[22m ────────────────────────────────────────── tidyverse_conflicts() ──
-## [31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-## [31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✔ ggplot2 3.3.2     ✔ purrr   0.3.4
+## ✔ tibble  3.0.4     ✔ dplyr   1.0.2
+## ✔ tidyr   1.1.2     ✔ stringr 1.4.0
+## ✔ readr   1.4.0     ✔ forcats 0.5.0</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="intro.html#cb11-1" aria-hidden="true"></a>cryptodata &lt;-<span class="st"> </span><span class="kw">group_by</span>(cryptodata, symbol)</span>
 <span id="cb11-2"><a href="intro.html#cb11-2" aria-hidden="true"></a><span class="kw">nest</span>(cryptodata)</span></code></pre></div>
-<pre><code>## [90m# A tibble: 218 x 2[39m
-## [90m# Groups:   symbol [218][39m
+<pre><code>## # A tibble: 218 x 2
+## # Groups:   symbol [218]
 ##    symbol data                 
-##    [3m[90m&lt;chr&gt;[39m[23m  [3m[90m&lt;list&gt;[39m[23m               
-## [90m 1[39m BTC    [90m&lt;tibble [2,289 × 26]&gt;[39m
-## [90m 2[39m ETH    [90m&lt;tibble [1,413 × 26]&gt;[39m
-## [90m 3[39m EOS    [90m&lt;tibble [2,242 × 26]&gt;[39m
-## [90m 4[39m LTC    [90m&lt;tibble [2,289 × 26]&gt;[39m
-## [90m 5[39m BSV    [90m&lt;tibble [1,532 × 26]&gt;[39m
-## [90m 6[39m ADA    [90m&lt;tibble [1,175 × 26]&gt;[39m
-## [90m 7[39m ZEC    [90m&lt;tibble [1,130 × 26]&gt;[39m
-## [90m 8[39m TRX    [90m&lt;tibble [1,510 × 26]&gt;[39m
-## [90m 9[39m HT     [90m&lt;tibble [2,224 × 26]&gt;[39m
-## [90m10[39m XMR    [90m&lt;tibble [2,283 × 26]&gt;[39m
-## [90m# … with 208 more rows[39m</code></pre>
+##    &lt;chr&gt;  &lt;list&gt;               
+##  1 BTC    &lt;tibble [2,292 × 26]&gt;
+##  2 ETH    &lt;tibble [1,416 × 26]&gt;
+##  3 EOS    &lt;tibble [2,245 × 26]&gt;
+##  4 LTC    &lt;tibble [2,292 × 26]&gt;
+##  5 BSV    &lt;tibble [1,535 × 26]&gt;
+##  6 ADA    &lt;tibble [1,178 × 26]&gt;
+##  7 ZEC    &lt;tibble [1,133 × 26]&gt;
+##  8 TRX    &lt;tibble [1,513 × 26]&gt;
+##  9 HT     &lt;tibble [2,227 × 26]&gt;
+## 10 XMR    &lt;tibble [2,286 × 26]&gt;
+## # … with 208 more rows</code></pre>
 <p>What does DT look like</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="intro.html#cb13-1" aria-hidden="true"></a><span class="kw">library</span>(DT)</span>
 <span id="cb13-2"><a href="intro.html#cb13-2" aria-hidden="true"></a>cryptodata</span></code></pre></div>
-<pre><code>## [90m# A tibble: 244,108 x 27[39m
-## [90m# Groups:   symbol [218][39m
+<pre><code>## # A tibble: 244,443 x 27
+## # Groups:   symbol [218]
 ##    pair  symbol quote_currency ask_1_price ask_1_quantity ask_2_price
-##    [3m[90m&lt;chr&gt;[39m[23m [3m[90m&lt;chr&gt;[39m[23m  [3m[90m&lt;chr&gt;[39m[23m                [3m[90m&lt;dbl&gt;[39m[23m          [3m[90m&lt;dbl&gt;[39m[23m       [3m[90m&lt;dbl&gt;[39m[23m
-## [90m 1[39m BTCU… BTC    USD             [4m1[24m[4m6[24m290.             0.058[4m9[24m  [4m1[24m[4m6[24m290.    
-## [90m 2[39m ETHU… ETH    USD               462.             0.4       463.    
-## [90m 3[39m EOSU… EOS    USD                 2.46         600           2.46  
-## [90m 4[39m LTCU… LTC    USD                60.7            3.75       60.7   
-## [90m 5[39m BSVU… BSV    USD               158.             0.6       158.    
-## [90m 6[39m ADAU… ADA    USD                 0.105        775           0.105 
-## [90m 7[39m ZECU… ZEC    USD                63.0            2.59       63.1   
-## [90m 8[39m TRXU… TRX    USD                 0.024[4m9[24m     [4m6[24m[4m5[24m497           0.024[4m9[24m
-## [90m 9[39m HTUSD HT     USD                 3.64         105.          3.65  
-## [90m10[39m XMRU… XMR    USD               112.             0.023     112.    
-## [90m# … with 244,098 more rows, and 21 more variables: ask_2_quantity [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   ask_3_price [3m[90m&lt;dbl&gt;[90m[23m, ask_3_quantity [3m[90m&lt;dbl&gt;[90m[23m, ask_4_price [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   ask_4_quantity [3m[90m&lt;dbl&gt;[90m[23m, ask_5_price [3m[90m&lt;dbl&gt;[90m[23m, ask_5_quantity [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_1_price [3m[90m&lt;dbl&gt;[90m[23m, bid_1_quantity [3m[90m&lt;dbl&gt;[90m[23m, bid_2_price [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_2_quantity [3m[90m&lt;dbl&gt;[90m[23m, bid_3_price [3m[90m&lt;dbl&gt;[90m[23m, bid_3_quantity [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_4_price [3m[90m&lt;dbl&gt;[90m[23m, bid_4_quantity [3m[90m&lt;dbl&gt;[90m[23m, bid_5_price [3m[90m&lt;dbl&gt;[90m[23m,[39m
-## [90m#   bid_5_quantity [3m[90m&lt;dbl&gt;[90m[23m, date_time_utc [3m[90m&lt;dttm&gt;[90m[23m, date [3m[90m&lt;date&gt;[90m[23m, pkDummy [3m[90m&lt;chr&gt;[90m[23m,[39m
-## [90m#   pkey [3m[90m&lt;chr&gt;[90m[23m[39m</code></pre>
+##    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;                &lt;dbl&gt;          &lt;dbl&gt;       &lt;dbl&gt;
+##  1 BTCU… BTC    USD             16290.             0.0589  16290.    
+##  2 ETHU… ETH    USD               462.             0.4       463.    
+##  3 EOSU… EOS    USD                 2.46         600           2.46  
+##  4 LTCU… LTC    USD                60.7            3.75       60.7   
+##  5 BSVU… BSV    USD               158.             0.6       158.    
+##  6 ADAU… ADA    USD                 0.105        775           0.105 
+##  7 ZECU… ZEC    USD                63.0            2.59       63.1   
+##  8 TRXU… TRX    USD                 0.0249     65497           0.0249
+##  9 HTUSD HT     USD                 3.64         105.          3.65  
+## 10 XMRU… XMR    USD               112.             0.023     112.    
+## # … with 244,433 more rows, and 21 more variables: ask_2_quantity &lt;dbl&gt;,
+## #   ask_3_price &lt;dbl&gt;, ask_3_quantity &lt;dbl&gt;, ask_4_price &lt;dbl&gt;,
+## #   ask_4_quantity &lt;dbl&gt;, ask_5_price &lt;dbl&gt;, ask_5_quantity &lt;dbl&gt;,
+## #   bid_1_price &lt;dbl&gt;, bid_1_quantity &lt;dbl&gt;, bid_2_price &lt;dbl&gt;,
+## #   bid_2_quantity &lt;dbl&gt;, bid_3_price &lt;dbl&gt;, bid_3_quantity &lt;dbl&gt;,
+## #   bid_4_price &lt;dbl&gt;, bid_4_quantity &lt;dbl&gt;, bid_5_price &lt;dbl&gt;,
+## #   bid_5_quantity &lt;dbl&gt;, date_time_utc &lt;dttm&gt;, date &lt;date&gt;, pkDummy &lt;chr&gt;,
+## #   pkey &lt;chr&gt;</code></pre>
 <p>And nested</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="intro.html#cb15-1" aria-hidden="true"></a><span class="kw">nest</span>(cryptodata)</span></code></pre></div>
-<pre><code>## [90m# A tibble: 218 x 2[39m
-## [90m# Groups:   symbol [218][39m
+<pre><code>## # A tibble: 218 x 2
+## # Groups:   symbol [218]
 ##    symbol data                 
-##    [3m[90m&lt;chr&gt;[39m[23m  [3m[90m&lt;list&gt;[39m[23m               
-## [90m 1[39m BTC    [90m&lt;tibble [2,289 × 26]&gt;[39m
-## [90m 2[39m ETH    [90m&lt;tibble [1,413 × 26]&gt;[39m
-## [90m 3[39m EOS    [90m&lt;tibble [2,242 × 26]&gt;[39m
-## [90m 4[39m LTC    [90m&lt;tibble [2,289 × 26]&gt;[39m
-## [90m 5[39m BSV    [90m&lt;tibble [1,532 × 26]&gt;[39m
-## [90m 6[39m ADA    [90m&lt;tibble [1,175 × 26]&gt;[39m
-## [90m 7[39m ZEC    [90m&lt;tibble [1,130 × 26]&gt;[39m
-## [90m 8[39m TRX    [90m&lt;tibble [1,510 × 26]&gt;[39m
-## [90m 9[39m HT     [90m&lt;tibble [2,224 × 26]&gt;[39m
-## [90m10[39m XMR    [90m&lt;tibble [2,283 × 26]&gt;[39m
-## [90m# … with 208 more rows[39m</code></pre>
+##    &lt;chr&gt;  &lt;list&gt;               
+##  1 BTC    &lt;tibble [2,292 × 26]&gt;
+##  2 ETH    &lt;tibble [1,416 × 26]&gt;
+##  3 EOS    &lt;tibble [2,245 × 26]&gt;
+##  4 LTC    &lt;tibble [2,292 × 26]&gt;
+##  5 BSV    &lt;tibble [1,535 × 26]&gt;
+##  6 ADA    &lt;tibble [1,178 × 26]&gt;
+##  7 ZEC    &lt;tibble [1,133 × 26]&gt;
+##  8 TRX    &lt;tibble [1,513 × 26]&gt;
+##  9 HT     &lt;tibble [2,227 × 26]&gt;
+## 10 XMR    &lt;tibble [2,286 × 26]&gt;
+## # … with 208 more rows</code></pre>
 
 </div>
 </div>
