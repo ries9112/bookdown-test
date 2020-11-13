@@ -25,3 +25,11 @@ jobs:
         run: |
           bookdown::render_book('index.Rmd', 'bookdown::gitbook', clean_envir = FALSE, clean = FALSE)
         shell: Rscript {0}
+      - name: Commit and push files
+        run: |
+          git config --local user.email "ries9112@colorado.edu"
+          git config --local user.name "ries9112"
+          git add .
+          git commit -m "Refresh entire book from CI automated process" -a
+          git push https://ries9112:${{secrets.GITHUB_TOKEN}}@github.com/ries9112/bookdown-test.git HEAD:master --force
+
