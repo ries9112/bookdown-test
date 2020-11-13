@@ -21,6 +21,7 @@ jobs:
       - name: Install Packages
         run: |-
           Rscript -e "install.packages('pins')"
+          Rscript -e "install.packages('bookdown')"
       - name: Refresh book
         run: |
           bookdown::render_book('index.Rmd', 'bookdown::gitbook', clean_envir = FALSE, clean = FALSE)
